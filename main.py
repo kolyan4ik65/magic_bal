@@ -7,3 +7,11 @@ print('Привет Мир, я магический шар, и я знаю от�
 print('Как тебя зовут?')
 name = input()
 print('Привет,', name)
+while True:
+    input('Задай свой вопрос: ')
+    print(random.choice(answers))
+    
+    again = input('Хочешь задать еще один вопрос? (да/нет): ').strip().lower()
+    if again not in ['да', 'yes', 'y', 'д']:
+        print('Возвращайся, если возникнут вопросы!')
+        break
